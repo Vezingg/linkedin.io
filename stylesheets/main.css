@@ -117,18 +117,18 @@ button {
 body{
     background-color: rgb(236, 197, 147);
 }
-.div1{
+.section1{
     position: absolute;
     top:15%;
     left:8%;
     width:60%;
     height:100%;
 }
-.div2{
+.pic{
     position: absolute;
     height:10%;
 }
-.div3{
+.info{
     position: absolute;
     top:60%;
     border-radius: 5px;
@@ -589,7 +589,7 @@ a.button7:hover{
 .deez3{
     top:-2%;
     position: absolute;
-    left:45%;
+    left:40%;
     border-radius: 5px;
     width:50%;
     height:20%;
@@ -597,7 +597,7 @@ a.button7:hover{
 .deez4{
     top:-2%;
     position: absolute;
-    left:70%;
+    left:67%;
     border-radius: 5px;
     width:50%;
     height:20%;
@@ -617,4 +617,9 @@ a.button7:hover{
     top:576%;
     left:80%;
     width:20%;
+}
+.car{
+    position: absolute;
+    top:520%;
+    left:90%;
 }
