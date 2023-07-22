@@ -3,8 +3,8 @@
 <head>
 	<title>Linked in profile</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="stylesheets/main.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="C:\Anshu's personal things\College\SEM-3\IMP\New folder\linked_in.css" type="text/css">
 </head>
 <body>
 	<header>
@@ -26,18 +26,18 @@
 			</div>
 		</div>
 	</header>
-	<div class="div1">
-		<div class="div2">
+	<div class="section1">
+		<div class="pic">
 			<img class="img rounded" src="https://i.pinimg.com/564x/5f/fa/2b/5ffa2b2561578d81551c3c1c61c5ec68.jpg" alt="Background image" width="143.5%">
 		</div>
-		<div class="div3">
+		<div class="info">
 			<img class="img rounded-circle" src="https://i.pinimg.com/564x/13/8c/a0/138ca07040bb975537479ffa28420c97.jpg" alt="Icon image" height="70%" style="position:absolute;top:-40%;left:10px;">
 			<p class="name">Priyanshu Jani</p>
 			<p class="small">(He/Him)</p>
 			<p class="std">Student At LJ University</p>
 			<p class="std1">Ahmedabad, Gujarat, India</p>
-			<a href="#" class="c1">Contact Us</a>
-			<a href="#" class="c2">Connections</a>
+			<a class="c1">Contact Us</a>
+			<a class="c2">Connections</a>
 			<div>
 				<a href="#" class="button3">Open To</a>
 				<a href="#" class="button33">Add Profile section</a>
@@ -343,8 +343,6 @@
 			<a href="https://www.linkedin.com/legal/privacy-policy" target="_blank" style="text-decoration: none;" class="aw">Privacy Policy</a>
 			<br><br>
 			<a href="https://business.linkedin.com/sales-solutions?trk=flagship_nav&veh=li-footer-lss-control&src=li-footer" target="_blank" style="text-decoration: none;" class="aw">Sales Solution</a>
-			<br><br>
-			<a href="https://about.linkedin.com/transparency" target="_blank" style="text-decoration: none;" class="aw">Safety Center</a>
 		</div>
 		<div class="deez3">
 			<a href="https://www.linkedin.com/accessibility" target="_blank" style="text-decoration: none;" class="aw">Accessibility</a>
@@ -369,7 +367,7 @@
 		<label class="text-muted">Select language</label>
 			<select class="form-select">
 				<optgroup>
-					<option><button class="but">English(English)</button></option>
+					<option><button class="but">English(UK)</button></option>
 					<option class="but">Arabic</option>
 					<option class="but">Aramaic</option>
 					<option class="but">Aymar</option>
@@ -381,6 +379,22 @@
 			</select>
 		</div>
 	</div>
+	<div  class="carousel slide car" data-bs-ride="carousel" data-bs-interval="3000">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<a href="https://www.linkedin.com/feed/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="Linkedin logo" width="70%" height="70%" class="rounded"></a>
+			</div>
+			<div class="carousel-item">
+				<a href="https://www.hackerrank.com/"><img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/160_Hackerrank_logo_logos-512.png" alt="hackerrank logo" height="70%" width="70%" class="rounded"></a>
+			</div>
+			<div class="carousel-item">
+				<a href="https://www.geeksforgeeks.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/GeeksforGeeks.svg/2560px-GeeksforGeeks.svg.png" heigh="70%" width="70%" alt="GeeksForGeeks logo" class="rounded"></a>
+			</div>
+			<div class="carousel-item">
+				<a href="https://leetcode.com/"><img src="https://cdn.iconscout.com/icon/free/png-256/leetcode-3521542-2944960.png" alt="LeestCode logo" height="70%" width="70%" class="rounded"></a>
+			</div>
+		</div>
+	</div>
 	<div class="HOPE">
 		<p style="font-size:medium;">Prepared by:Priyanshu Jani:Batch:5<br>I tried to make this like my own Linked-In profile</p>
 	</div>
@@ -388,10 +402,18 @@
 		window.addEventListener('resize', function() {
   		if (window.innerWidth < 1200) 
 		{
-    			window.open("width.html", "_blank");
+    		window.open("C:/Anshu's personal things/College/SEM-3/IMP/New folder/new_page.html", "_self");
   		}
 		});
-
+		const links = document.getElementsByTagName('a');
+		for (let i = 0; i < links.length; i++) {
+  			if (!links[i].href) {
+    			links[i].addEventListener('click', function(event) {
+	    		event.preventDefault();
+       			alert('Link not provided!');
+    			});
+  			}
+		}
 	</script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
